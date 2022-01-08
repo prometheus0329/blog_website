@@ -1,0 +1,36 @@
+<%- include("partials/header") -%>
+
+
+
+<div class="container home-box">
+
+    <h1>Update <%= post.title %>'s Post</h1>
+    
+        <h2><%= post.title %></h2>
+        <p><%= post.content %></p>
+        <% if(post.link){ %>
+            <p>Link to respective <a href="<%= post.link %>">Repository/Published Link</a></p>
+        <% }else{ %>
+            <p>No published or repository link found.</p>
+        <%}%>
+</div>
+
+<h1>Update Here : </h1>
+<form action="/update/<%=post._id%>" method="post">
+    <div class="mb-3">
+        <label for="newTitle" class="form-label">New Title</label>
+        <input type="text" class="form-control" placeholder="Title" name="newTitle"> 
+    </div>
+    <div class="mb-3">
+        <label for="newPost" class="form-label">New Post</label>
+        <textarea name="newContent" class="form-control" rows="7" maxlength="500" placeholder="Your text here..."></textarea>
+    </div>
+    <div class="mb-3">
+        <label for="newLink" class="form-label">New Link (optional)</label>
+        <input type="text" class="form-control" placeholder="Link" name="newLink"> 
+    </div>
+    <a role="button" class="btn btn-primary publish-btn" href="/">Back</a>
+    <button class="btn btn-primary publish-btn" type="submit">Update</button>
+</form>
+
+<%- include("partials/footer") -%>

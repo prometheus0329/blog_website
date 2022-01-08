@@ -1,0 +1,22 @@
+
+<%- include("partials/header") -%>
+
+<div class="container home-box">
+    <h1> Posts : </h1>
+    <a role="button" class="btn btn-primary btn-lg publish-btn compose-btn" href="/compose">Compose New Post</a>
+    <br>
+    <div class="container post-box">
+    <% var sno = 1 %>
+    <% post.forEach(function(i){ %>
+        <h1><%= sno++ %>. <%= i.title %></h1>
+    <% if(i.content.length >= 80){ %>
+            <p><%= i.content.substring(0,80) %>...<a href= "/posts/<%= i._id %>" >Read More</a></p>
+    <% } else { %>
+        <p> <%= i.content%> <a href="/posts/<%= i._id %>">Go to Post</a></p>
+        
+
+    <% }})%>
+    </div>
+</div>
+
+<%- include("partials/footer") -%>

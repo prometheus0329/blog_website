@@ -1,0 +1,17 @@
+<%- include("partials/header") -%>
+
+<h1><%= post.title %></h1>
+<p><%= post.content %></p>
+<p>The above mentioned project is published at this <a href="<%= post.link %>">Link</a>. </p>
+
+<form action="/posts/<%= post._id %>" method="post">
+
+    <label for="">Type 'Delete' & Confirm</label>
+    <input type="text" class="del-input" name="delCheck" placeholder="Delete or delete">
+    <button type="submit" class="btn btn-primary confirm-btn">Confirm</button>
+   
+</form>
+
+<a role="button" type="submit" class="btn btn-primary publish-btn" href= "/update/<%= post._id %>">Update</a>
+
+<%- include("partials/footer") -%>

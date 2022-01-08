@@ -1,0 +1,148 @@
+body{
+    background-color: #D3DEDC;
+    min-height: 100vh;
+    position: relative;
+}
+.container-fluid {
+    padding-top: 150px !important;
+    padding-bottom: 70px;
+}
+.home-box{
+    padding: 100px 150px;
+    min-width: fit-content;
+}
+.post-box{
+    margin: 20px;
+}
+.bg-light{
+    background-color: #7C99AC !important;
+}
+.navbar {
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+    font-size: 12px;
+    letter-spacing: 5px;
+}
+.navbar-nav  li a:hover {
+    color: #D3DEDC !important;
+}
+.main-box{
+    position: relative;
+    padding-top: 120px;
+}
+.compose-btn{
+    margin-left: 680px;
+}
+
+
+.publish-btn{
+    margin-top: 10px;
+}
+
+.navbar-nav > li{
+    padding-left:10px;
+    padding-right:10px;
+  }
+
+
+
+.del-input{
+    padding: 2px;
+    margin: 10px;
+}
+.confirm-btn{
+    margin: 10px;
+}
+
+.form-box{
+    margin-top: 50px;
+    margin: 50px 250px ;
+    background-color: #7C99AC;
+    border-radius: 15px;
+    box-shadow: 10px 5px 5px grey;
+}
+.flex-container{
+    display: flex;
+    
+}
+.form-group{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+#name{
+    margin-left: 30px;
+    border-radius: 10px;
+    padding:5px;
+    border-width: 0;
+    box-shadow: 5px 3px 3px gray;
+}
+#email{
+    margin-left: 35px;
+    border-radius: 10px;
+    padding:5px;
+    border-width: 0;
+    box-shadow: 5px 3px 3px gray;
+}
+#subject{
+    margin-left: 21px;
+    border-radius: 10px;
+    padding:5px;
+    border-width: 0;
+    box-shadow: 5px 3px 3px gray;
+}
+#user_msg{
+    border-radius: 10px;
+    border-width: 0;
+    box-shadow: 5px 3px 3px gray;
+}
+
+.first{
+    padding-left: 100px;
+}
+.second{
+    padding-right: 100px;
+}
+.contact-btn{
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+/* FOOTER */
+
+/* .footer-padding {
+    padding-top: 20px;
+	padding-bottom: 50px;
+} */
+
+.footer {
+    padding-top: 20px;
+    padding-bottom: 50px;
+	position: absolute;
+	text-align: center;
+	bottom: 0;
+	width: 100%;
+	height: 100px;
+	background-color: #92a9bd;
+}
+
+.copyright{
+	margin-top: 25px;
+	font-size: 14px;
+    color: black;
+}
+.footer a{
+    text-decoration: none;
+    color: black;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.footer a:hover{
+    color: white;
+}

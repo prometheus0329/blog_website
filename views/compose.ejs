@@ -1,0 +1,20 @@
+<%- include("partials/header") -%>
+<h1>Compose New Blog</h1>
+<form action="/compose" method="post">
+    <div class="mb-3">
+        <label for="newTitle" class="form-label">Title</label>
+        <input type="text" class="form-control" placeholder="Title" name="newTitle"> 
+    </div>
+    <div class="mb-3">
+        <label for="newPost" class="form-label">New Post</label>
+        <textarea name="newPost" class="form-control" rows="7" maxlength="500" placeholder="Your text here..."></textarea>
+    </div>
+    <div class="mb-3">
+        <label for="newLink" class="form-label">Link (optional)</label>
+        <input type="text" class="form-control" placeholder="Link" name="newLink"> 
+    </div>
+    <a role="button" class="btn btn-primary publish-btn" href="/">Back</a>
+    <button class="btn btn-primary publish-btn" type="submit">Publish</button>
+</form>
+
+<%- include("partials/footer") -%>
